@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://ujjwal_11:NFRXS5e8dqg%40iV8@database.so6hr0m.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret": "abc",
+    "githubClientId": "9347518799ccc5738ee7",
+    "githubSecret": "9b13b117f43ef497776e01dd2c5fbe874b41c9a4"
+}
