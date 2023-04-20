@@ -7,7 +7,7 @@ connectDB()
 
 app.use(express.json({ extended: false }))
 
-// app.get('/', (req, res) => res.send('api running'))
+app.get('/', (req, res) => res.send('api running'))
 
 
 app.use('/api/users', require('./routes/api/users'))
@@ -26,4 +26,4 @@ if (process.env.NODE_ENV === 'production') {
 
 const PORT = process.env.PORT || 5000
 
-app.listen(PORT, () => console.log('snb'))
+app.listen(PORT, () => console.log('project started🥳🥳'))

@@ -5,8 +5,15 @@ import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
 
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
+    const item = {
+        projurl: 'https://64308984f3fded00bfd150d4--cosmic-sfogliatella-064c0c.netlify.app/lobby.html'
+      }
+      
     const authLinks = (
         <ul>
+        <l1>
+        <a href={item.projurl} target="_blank" rel="noopener noreferrer">Video Call</a>
+        </l1>
             <li>
                 <Link to='/profiles'>
                     <span>Developers</span>
