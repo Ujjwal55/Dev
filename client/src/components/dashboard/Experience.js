@@ -32,10 +32,10 @@ const Experience = ({ experience, deleteExperience }) => {
             <table className='table'>
                 <thead>
                     <tr>
-                        <th>Company</th>
-                        <th className='hide-sm'>Title</th>
-                        <th className='hide-sm'>Years</th>
-                        <th />
+                        <th style={{backgroundColor: "#262625", color: "#fff"}}>Company</th>
+                        <th className='hide-sm' style={{backgroundColor: "#262625", color: "#fff"}}>Title</th>
+                        <th className='hide-sm' style={{backgroundColor: "#262625", color: "#fff"}}>Years</th>
+                        <th style={{backgroundColor: "#262625", color: "#fff"}} />
                     </tr>
                 </thead>
                 <tbody>{experiences}</tbody>

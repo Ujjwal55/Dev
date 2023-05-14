@@ -50,13 +50,14 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     }
     return (
         <Fragment>
-            <h1 className='large text-primary'>Sign Up</h1>
+            <h1 style={{color: "#845695"}} className='large text-primary'>Sign Up</h1>
             <p className='lead'>
                 <i className='fa fa-user'></i> Create Your Account
             </p>
             <form className='form' onSubmit={(e) => onSubmit(e)}>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='text'
                         placeholder='Name'
                         name='name'
@@ -67,6 +68,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                 </div>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='email'
                         placeholder='Email Address'
                         name='email'
@@ -81,6 +83,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                 </div>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='password'
                         placeholder='Password'
                         name='password'
@@ -91,6 +94,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                 </div>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='password'
                         placeholder='Confirm Password'
                         name='password2'
@@ -100,13 +104,14 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
                     />
                 </div>
                 <input
+                style={{background: "#845695"}}
                     type='submit'
                     className='btn btn-primary'
                     value='Register'
                 />
             </form>
-            <p className='my-1'>
-                Already have an account? <Link to='/login'>Sign In</Link>
+            <p className='my-1' >
+                Already have an account? <Link to='/login' style={{color: "#fff"}}>Sign In</Link>
             </p>
         </Fragment>
     );

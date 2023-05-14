@@ -25,13 +25,14 @@ const Login = ({ login, isAuthenticated }) => {
     }
     return (
         <Fragment>
-            <h1 className='large text-primary'>Sign In</h1>
+            <h1 className='large text-primary' style={{color: "#845695"}}>Sign In</h1>
             <p className='lead'>
                 <i className='fa fa-user'></i> Sign Into Your Account
             </p>
             <form className='form' onSubmit={(e) => onSubmit(e)}>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='email'
                         placeholder='Email Address'
                         name='email'
@@ -41,6 +42,7 @@ const Login = ({ login, isAuthenticated }) => {
                 </div>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='password'
                         placeholder='Password'
                         name='password'
@@ -50,13 +52,14 @@ const Login = ({ login, isAuthenticated }) => {
                     />
                 </div>
                 <input
+                style={{color: "#845695"}}
                     type='submit'
                     className='btn btn-primary'
                     value='Login'
                 />
             </form>
             <p className='my-1'>
-                Don't have an account? <Link to='/register'>Sign Up</Link>
+                Don't have an account? <Link to='/register' style={{color: "#fff"}}>Sign Up</Link>
             </p>
         </Fragment>
     );

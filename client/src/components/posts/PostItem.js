@@ -18,7 +18,7 @@ const PostItem = ({
             <div>
                 <Link to={`/profile/${user}`}>
                     <img class='round-img' src={avatar} alt='' />
-                    <h4>{name}</h4>
+                    <h4 style={{color: "#845695"}}>{name}</h4>
                 </Link>
             </div>
             <div>
@@ -43,7 +43,7 @@ const PostItem = ({
                         >
                             <i class='fas fa-thumbs-down'></i>
                         </button>
-                        <Link to={`/posts/${_id}`} class='btn btn-primary'>
+                        <Link to={`/posts/${_id}`} class='btn btn-primary' style={{background: "#845695"}}>
                             Discussion{' '}
                             {comments.length > 0 && (
                                 <span class='comment-count'>

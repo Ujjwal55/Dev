@@ -44,7 +44,7 @@ const CreateProfile = ({ createProfile, history }) => {
     };
     return (
         <Fragment>
-            <h1 className='large text-primary'>Create Your Profile</h1>
+            <h1 className='large text-primary' style={{color: "#845695"}}>Create Your Profile</h1>
             <p className='lead'>
                 <i className='fa fa-user'></i> Let's get some information to
                 make your profile stand out
@@ -53,12 +53,13 @@ const CreateProfile = ({ createProfile, history }) => {
             <form className='form' onSubmit={(e) => onSubmit(e)}>
                 <div className='form-group'>
                     <select
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         name='status'
                         value={status}
                         onChange={(e) => onChange(e)}
                     >
-                        <option value='0'>* Select Professional Status</option>
-                        <option value='Developer'>Developer</option>
+                        <option style={{color: "#fff", border: "none", background: "#3f434a"}} value='0'>* Select Professional Status</option>
+                        <option value='Developer' style={{color: "#fff", border: "none", background: "#3f434a"}}>Developer</option>
                         <option value='Junior Developer'>
                             Junior Developer
                         </option>
@@ -81,6 +82,7 @@ const CreateProfile = ({ createProfile, history }) => {
                 </div>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='text'
                         placeholder='Company'
                         name='company'
@@ -92,7 +94,7 @@ const CreateProfile = ({ createProfile, history }) => {
                     </small>
                 </div>
                 <div className='form-group'>
-                    <input
+                    <input style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='text'
                         placeholder='Website'
                         name='website'
@@ -105,6 +107,7 @@ const CreateProfile = ({ createProfile, history }) => {
                 </div>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='text'
                         placeholder='Location'
                         name='location'
@@ -117,6 +120,7 @@ const CreateProfile = ({ createProfile, history }) => {
                 </div>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='text'
                         placeholder='* Skills'
                         name='skills'
@@ -130,6 +134,7 @@ const CreateProfile = ({ createProfile, history }) => {
                 </div>
                 <div className='form-group'>
                     <input
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}
                         type='text'
                         placeholder='Github Username'
                         name='githubusername'
@@ -143,6 +148,7 @@ const CreateProfile = ({ createProfile, history }) => {
                 </div>
                 <div className='form-group'>
                     <textarea
+                    style={{color: "#fff", border: "none", background: "#3f434a"}}                    
                         placeholder='A short bio of yourself'
                         name='bio'
                         value={bio}
@@ -169,6 +175,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         <div className='form-group social-input'>
                             <i className='fa fa-twitter fa-2x'></i>
                             <input
+                            style={{color: "#fff", border: "none", background: "#3f434a"}}
                                 type='text'
                                 placeholder='Twitter URL'
                                 name='twitter'
@@ -180,6 +187,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         <div className='form-group social-input'>
                             <i className='fa fa-facebook fa-2x'></i>
                             <input
+                            style={{color: "#fff", border: "none", background: "#3f434a"}}
                                 type='text'
                                 placeholder='Facebook URL'
                                 name='facebook'
@@ -191,6 +199,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         <div className='form-group social-input'>
                             <i className='fa fa-youtube fa-2x'></i>
                             <input
+                            style={{color: "#fff", border: "none", background: "#3f434a"}}
                                 type='text'
                                 placeholder='YouTube URL'
                                 name='youtube'
@@ -202,6 +211,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         <div className='form-group social-input'>
                             <i className='fa fa-linkedin fa-2x'></i>
                             <input
+                            style={{color: "#fff", border: "none", background: "#3f434a"}}
                                 type='text'
                                 placeholder='Linkedin URL'
                                 name='linkedin'
@@ -213,6 +223,7 @@ const CreateProfile = ({ createProfile, history }) => {
                         <div className='form-group social-input'>
                             <i className='fa fa-instagram fa-2x'></i>
                             <input
+                            style={{color: "#fff", border: "none", background: "#3f434a"}}
                                 type='text'
                                 placeholder='Instagram URL'
                                 name='instagram'
@@ -223,7 +234,7 @@ const CreateProfile = ({ createProfile, history }) => {
                     </Fragment>
                 )}
 
-                <input type='submit' className='btn btn-primary my-1' />
+                <input type='submit' className='btn btn-primary my-1' style={{background: "#845695"}} />
                 <Link className='btn btn-light my-1' to='/dashboard'>
                     Go Back
                 </Link>

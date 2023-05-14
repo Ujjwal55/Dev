@@ -8,7 +8,7 @@ const PostForm = ({ addPost }) => {
 
     return (
         <div class='post-form'>
-            <div class='bg-primary p'>
+            <div class='bg-primary p' style={{background: "#845695"}}>
                 <h3>Say Something...</h3>
             </div>
             <form
