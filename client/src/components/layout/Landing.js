@@ -17,7 +17,7 @@ const Landing = ({ isAuthenticated }) => {
                         get help from other developers
                     </p>
                     <div className='buttons'>
-                        <Link to='/register' className='btn btn-primary'>
+                        <Link to='/register' className='btn btn-primary' style={{background: "#845695"}}>
                             Sign Up
                         </Link>
                         <Link to='/login' className='btn btn-light'>

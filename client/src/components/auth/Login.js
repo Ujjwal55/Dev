@@ -52,7 +52,7 @@ const Login = ({ login, isAuthenticated }) => {
                     />
                 </div>
                 <input
-                style={{color: "#845695"}}
+                style={{background: "#845695"}}
                     type='submit'
                     className='btn btn-primary'
                     value='Login'
