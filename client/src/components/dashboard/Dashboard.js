@@ -39,12 +39,13 @@ const Dashboard = ({
                             <i className='fas fa-user-minus'></i> Delete my
                             Account
                         </button>
-                        <button
+                        {/* <button
                             className='btn btn-danger'
-                            onClick={() => <Link to="https://main--leafy-cactus-d0598f.netlify.app/"></Link>}
+                            onClick={() => <a href="https://main--leafy-cactus-d0598f.netlify.app/"></a>}
                         >
-                            <i></i> Make Resume
-                        </button>
+                            <i>Make Resume</i>
+                        </button> */}
+                        <a href="https://main--leafy-cactus-d0598f.netlify.app" rel="noopener noreferrer">Make Resume</a>
                     </div>
                 </Fragment>
             ) : (
